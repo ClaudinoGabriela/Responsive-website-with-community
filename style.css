@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+#body{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+#navbar {
+    background-color: #ffa509;
+    text-align: right;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-nav li a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-nav li a:hover,
+    .navbar-nav.active li a {
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        border-radius: 10px;
+    }
+
+#cyberbullying h1{
+    font-weight: 700;
+}
+
+#cyberbullying h3{
+    font-weight: 700;
+}
+
+#cyberbullying{
+    width: 50%;
+    color:rgb(54, 54, 54);
+}
+
+#cyberbullying h1, #cyberbullying h3, #idade{
+    color:#000;
+}
+
+#cyberbullying h1, #cyberbullying h3, #cyberbullying p, #cyberbullying figcaption{
+    margin-bottom: 25px;
+}
+
+#cyberbullying h1, #cyberbullying h3, #login h3, #cadastro h3{
+    margin-top: 25px;
+    color:#000;
+}
+
+@media screen and (max-width: 767px) {
+
+    #cyberbullying{
+        width: 100%;
+    }
+
+}
+
+
+#login, #cadastro{
+    width: 30%;
+    color:rgb(54, 54, 54);
+    text-align: center;
+    margin-top: 7em;
+}
+
+#login form, #cadastro form{
+    text-align: left;
+}
+
+#login a, #cadastro a{
+    text-decoration: none;
+    color: #000;
+}
+
+#btn{
+    background-color: #ffa509;
+    border-color: #ffa509;
+    color:#000;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+
+    #login{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    #cadastro{
+        width: 100%;
+    }
+
+}
+
+#painel{
+    width: 70%;
+    color:rgb(54, 54, 54);
+    margin-top: 8em;
+}
+
+@media screen and (max-width: 767px) {
+
+    #painel{
+        width: 100%;
+    }
+
+}
+
+#painel h3{
+    color:#000;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#avatar{
+    width: 20%;
+    height: 20%;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+
+    #avatar{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+#comunidade{
+    width: 80%;
+    color:rgb(54, 54, 54);
+    margin-top: 7em;
+}
+
+@media screen and (max-width: 767px) {
+
+    #comunidade{
+        width: 100%;
+    }
+
+}
+
+#forum{
+    margin-bottom: 20px;
+}
+
+#informacoesforum3{
+    text-align: right;
+    font-weight: bold;
+    align-items: center;
+    justify-content: end;
+}
+
+#tituloforum{
+    font-weight: bold;
+    align-items: center;
+    justify-content: end;
+}
+
+#usuario{
+    text-align: left;
+    justify-content: start;
+}
+
+#tabela thead{
+    background-color: #ffa305;
+    color: #000;
+    text-align: center;
+    border:1px solid rgb(117, 111, 111);
+}
+
+#tabela tbody{
+    text-align: center;
+    border:1px solid rgb(117, 111, 111);
+}
+
+#tituloforum{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+}
+
+#tabela td{
+    font-size: 0.8em;
+}
+
+#tabela {
+    text-align: center;
+}
+
+#usuario{
+    text-align: left;
+    align-items: center;
+    justify-content: start;
+}
+
+@media screen and (max-width: 767px) {
+
+    #usuario{
+        text-align: right;
+        align-items: center;
+        justify-content: end;
+    }
+
+}
+
+#informacoesforum3 a{
+    text-align: center;
+    color: #000;
+}
+
+#linksforum{
+    text-align: left;
+    font-weight: bold;
+    align-items: center;
+    justify-content: start;
+}
+
+#btnnovoforum{
+    background-color: #ddb97a;
+    border-color: #ddb97a;
+    color:#000;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+
+#comunidade{
+    width: 70%;
+    color:rgb(54, 54, 54);
+    margin-top: 7em;
+    margin-bottom: 3em;
+}
+
+@media screen and (max-width: 767px) {
+
+    #comunidade{
+        width: 100%;
+    }
+
+}
+
+#comunidade h1{
+    color:#000;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+
+    #criarforum{
+        width: 100%;
+    }
+
+}
+
+#criarforum h1{
+    font-weight: 700;
+    color:#000;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#criarforum{
+    width: 60%;
+    color:rgb(54, 54, 54);
+    margin-top: 7em;
+}
+
+@media screen and (max-width: 767px) {
+
+    #criarforum{
+        width: 100%;
+    }
+
+}
+
+#btnpublicar{
+    background-color: #ffa509;
+    border-color: #ffa509;
+    color:#000;
+    text-align: center;
+    font-weight: 500;
+}
+
+#btnvoltar{
+    background-color: #fce0b0;
+    border-color: #fce0b0;
+    color:#000;
+    text-align: center;
+    font-weight: 500;
+}
+
+#btnexcluir{
+    background-color: #a31c1c;
+    border-color: #a31c1c;
+    color:#000;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+#criarforum form{
+    font-weight: 100;
+    text-decoration: none;
+}
+
+#abrirforum{
+    width: 70%;
+    color:rgb(54, 54, 54);
+    margin-top: 7em;
+    margin-bottom: 3em;
+}
+
+@media screen and (max-width: 767px) {
+
+    #abrirforum{
+        width: 100%;
+    }
+
+}
+
+#titulo{
+    color:#000;
+}
+
+#inform{
+    font-size: 0.8em;
+}
+
+#ampliarforum{
+    width: 99%;
+    color:rgb(54, 54, 54);
+    margin-top: 2em;
+    border-radius: 0.5em;
+    border-width: 2em;
+    border-color: #000;
+}
+
+@media screen and (max-width: 767px) {
+
+    #abrirforum{
+        width: 100%;
+    }
+
+    #coments{
+        width: 99%;
+        color:rgb(54, 54, 54);
+        margin-top: 2em;
+    }
+}
+
+#coments{
+    width: 95%;
+    color:rgb(54, 54, 54);
+    margin-top: 2em;
+    border-radius: 0.5em;
+}
+
+#abrirforum h1{
+    color:#000;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#sobre h1{
+    font-weight: 700;
+}
+
+#sobre{
+    width: 50%;
+    color:rgb(54, 54, 54);
+    margin-top: 5em;
+}
+
+#sobre a{
+    text-decoration: none;
+}
+
+#sobre img{
+    margin-top: 0.6em;
+}
+
+#sobre h1, #sobre h3{
+    color:#000;
+    font-weight: 700;
+}
+
+
+#sobre h1, #sobre p{
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 767px) {
+
+    #sobre{
+        width: 100%;
+    }
+
+}
+
+#titulo2{
+    color:#000;
+    font-size: 1.4em;
+    margin-top: 0.4em;
+}
+
+#footer{
+    padding: 2em;
+    background-color: #FFA309;
+}
+
+#textlogo{
+    font-size: 0.6em;
+}
+
+#logof{
+    font-size: 1.5em;
+}
+
+#textfooter{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+
+#pgs{
+    font-size: 1em;
+    padding-left: 10%;
+}
+
+#sbr{
+    font-size: 0.9em;
+}
+
+#footer2{
+    background-color: #c07c06;
+    text-align: center;
+    padding: 0.01em;
+}
+
+#copyright{
+    margin-top: 0.7em;
+}
+
+@media screen and (max-width: 767px) {
+
+    #row{
+        text-align: center;
+        padding: 2%;
+    }
+
+    #textfooter{
+        font-size: 0.9em;
+        text-decoration: none;
+        color: rgb(34, 34, 34);
+    }
+    
+    #pgs{
+        margin-top: 8%;
+        margin-bottom: 8%;
+        padding-right: 10%;
+    }
+    
+}

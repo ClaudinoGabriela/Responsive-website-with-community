@@ -1,0 +1,6 @@
+<?php
+if($_SESSION["perfil"]!='adm' ){
+    session_destroy ();
+    header("Location: index.php");
+}
+?>

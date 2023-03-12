@@ -1,0 +1,71 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<HTML lang="pt-br">
+<HEAD>
+    <TITLE> Ínicio </TITLE>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</HEAD>
+<BODY id ="body">
+
+<?php
+date_default_timezone_set ("America/Sao_Paulo");
+echo date_default_timezone_get ();
+?>
+
+<?php include("menu.php"); ?>
+
+<?php
+
+    if(isset($_POST)) {
+
+        try {
+            include("conexao.php");
+            $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $stmt = $dbh->prepare("insert into forum (titulo,texto,usuario, data, hora) values (?,?,?,?,?);");
+            $stmt->bindParam(1, $titulo);
+            $stmt->bindParam(2, $texto);
+            $stmt->bindParam(3, $nome);
+            $stmt->bindParam(4, $data);
+            $stmt->bindParam(5, $hora);
+            $titulo=$_POST["titulo"];
+            $texto=$_POST["texto"];
+            $nome=$_SESSION["nome"];
+            $data = date('y-m-d');
+            date_default_timezone_set('America/Sao_Paulo');
+            $hora = date('h:i:s');
+
+            if($stmt->execute()) {
+                header("Location: comunidade.php");
+                ?>
+
+                <?php
+            }
+        } catch (PDOException $e) {
+            $message = $e->getMessage();
+            $voltar = "comunidade.php";
+            echo "<br>";
+            echo "<div class='alert alert-danger' role='alert'>";
+            echo "<h4 class='alert-heading'>";
+            echo $message;
+            echo "</h4>";
+            echo "<hr>";
+            echo "<a href='$voltar' class='btn btn-secondary btn-rounded' >";
+            echo "Voltar";
+            echo "</a>";
+            echo "</div>";
+            die();
+        }
+
+    }
+
+    
+    ?>
+
+<?php include("footer.php"); ?>
+
+</BODY>
+</HTML>
