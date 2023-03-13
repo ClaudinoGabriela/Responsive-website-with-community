@@ -12,3 +12,6 @@ As páginas "login_verificar.php" e login_verificar_adm.php" verificam se o usu�
 o conteúdo será mostrado de acordo com o login. Por exemplo, um usuário sem login pode apenas vizualizar os fóruns, mas não pode criá-los e nem
 excluí-los. Um usuário comum, logado, poderá criar e excluir os PRÓPRIOS fóruns e não os de outros usuários. Já o administrador poderá criar fóruns
 e também excluir os fóruns de QUALQUER usuário.
+
+Se algum usuário comum ou não logado tentar burlar o login e digitar a url da página do administrador ou do perfil, ele será jogado diretamente
+para a página inicial(index.php).
