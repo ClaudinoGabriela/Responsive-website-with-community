@@ -23,7 +23,8 @@ In the "conexao.php" file, the localhost user is "root" and the password is empt
 
 The relationship of forum's and answer's tables is 1xn. In 1 forum the user can make n answers.
 
-In the "usuario" table of the database, there is the "perfil" attribute that identifies whether the user is an ordinary person or an administrator. To ensure security, the administrator login can only be created directly in the database when "adm" is placed in the "perfil" attribute.
+In the "usuario" table of the database, there is the "perfil" attribute that identifies whether the user is an ordinary person or an administrator.
+To ensure security, the administrator login can only be created directly in the database when "adm" is placed in the "perfil" attribute.
 
 Pages "login_verificar.php" and login_verificar_adm.php" check if the user is regular or administrator. When called in other pages, the content will be shown according to the login. For example, a user without login can only view the forums, but cannot create or delete them. An ordinary user, logged in, will be able to create and delete the OWN forums and not those of other users. The administrator will be able to create forums and also delete the forums of ANY user.
 
